@@ -41,7 +41,7 @@ BoardNest connects university students with landlords offering verified, trustwo
 ### Setup
 
 **1. Clone the repository**
-```bash
+```bash\ cmd
 git clone https://github.com/boardnest-student-accomodation-platform/boardnest.git
 cd boardnest
 ```
@@ -81,19 +81,24 @@ Password: admin123
 boardnest/
 ├── config/          # Database connection
 ├── includes/        # Shared session, header, footer
-├── modules/
+├── public/
 │   ├── student/     # Student dashboard and actions
 │   ├── landlord/    # Landlord dashboard and actions
 │   ├── field_agent/ # Field agent dashboard and actions
 │   └── admin/       # Admin dashboard and actions
-├── public/
 │   └── assets/      # CSS, JS, images, uploads
-├── login.php
+│   └── uploads/      # CSS, JS, images, uploads
+├── src/
+│   ├── student/     # Student dashboard and actions
+│   ├── landlord/    # Landlord dashboard and actions
+│   ├── field_agent/ # Field agent dashboard and actions
+│   └── admin/       # Admin dashboard and actions
+│    
 ├── logout.php
-├── register.php
+├── login.php
 ├── index.php        # Role-based redirect after login
-├── index.html       # Public landing page
-└── boardnest.sql    # Database schema
+├── logout.php
+└── schema.sql       # Database schema
 ```
 
 ---
